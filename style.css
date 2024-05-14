@@ -19,7 +19,6 @@
 .inner {
   width: 100%;
   height: 100%;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,10 +35,12 @@
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu-list li {
-  margin-right: 48px;
+  width: 150px;
+  height: 30px;
   font-weight: 600;
 }
 
@@ -50,7 +51,10 @@
 
 .language {
   display: flex;
-  margin-right: 25px;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 45px;
   font-size: 12px;
   font-weight: 600;
 }
@@ -58,7 +62,6 @@
   opacity: 50%;
   margin-right: 9px;
 }
-
 .side-img :first-child {
   margin-right: 5px;
 }
@@ -69,39 +72,47 @@
   justify-content: center;
   width: 100%;
   padding-top: 120px;
-  position: relative;
 }
 
-.wood,
-.build {
+.big-icon-img {
   display: flex;
   align-items: center;
   width: 450px;
   height: 280px;
   border-radius: 5%;
   margin-right: 25px;
+  position: relative;
 }
 
-.wood {
+.big-icon :nth-child(1) {
   background-color: #fa4b14;
 }
-.build {
+
+.big-icon :nth-child(2) {
   background-color: #fd820e;
 }
 
+@media (max-width: 1180px) {
+  .big-icon-img {
+    display: block;
+  }
+}
+
 .big-icon-text {
-  display: flex;
-  align-items: end;
   color: white;
   font-size: 35px;
   font-weight: 800;
 }
-.big-icon-text1 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.ko-text,
+.en-text {
+  position: absolute;
+  top: 180px;
+  left: 25px;
 }
 
-.wood-text,
-.build-text {
-  padding: 150px 0px 0 30px;
+.en-text {
+  position: absolute;
+  top: 140px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
